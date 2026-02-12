@@ -1,0 +1,44 @@
+1. Print numbers in descending order from 10 to 1 using looping statement
+    public class day3 {
+    public static void main(String[] args) {
+	       for(int i=10;i>=1;i--) {
+				  System.out.println(i);
+				}
+    }
+}
+2. Perform the following:
+           a. Get the input from user like add,sub,div
+           b. Based on the input perform the mathematical operation using any conditional statement
+       import java.util.Scanner;      
+		  public class day3 {
+  
+      public static void main(String[] args) {
+		
+        Scanner scan=new Scanner(System.in);
+	     System.out.println("enter the a value :");
+	     int a=scan.nextInt();
+	     System.out.println("enter the b value :");
+	     int b=scan.nextInt();
+	     scan.nextLine();
+	     System.out.println("enter the oerator type :");
+	     String operator= scan.nextLine();
+	     switch(operator) {
+	    case "add":
+	    	System.out.println("addition:" + (a+b));
+	    	break;
+	    case "sub":	
+	    	System.out.println("subtraction:" + (a-b));
+	    	break;
+	    case "multiple":
+	    	System.out.println("multiplication:" + (a*b));
+	    	break;
+	    case "divide":
+	    	System.out.println("division:" + (a/b));
+	    	break;
+	    default:
+	    	System.out.println("no mathematical  operation" );
+	     }
+	    scan.close();
+      }
+           }
+        
