@@ -1,0 +1,41 @@
+1. Get 3 floating numbers from user like for eg a,b,c. Multiply a & b and then divide it by c.Print the result. 
+	public class Day2 {
+	
+public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	System.out.println("enter the a value : ");
+	float a=scan.nextFloat();
+	System.out.println("enter the b value : ");
+	float b =scan.nextFloat();
+	System.out.println("enter the c value : ");
+    float c=scan.nextFloat();
+    float d=a*b/c;
+    System.out.println(d);
+}
+	}
+
+2. Compare 2 numbers using >= and <= operators. Print the result.
+type:1
+public class day2assignment {
+	
+public static void main(String[] args) {
+    int a = 35;
+		int b = 20;
+		System.out.println((a>=b) ? "true" : " false");
+		}
+}
+
+(or)
+type :2
+
+public class day2assignment {
+
+	public static void main(String[] args) {
+	   int a=5;
+		 int b=6;
+		 System.out.println(a>=b);
+		 System.out.print(a<=b);
+}
+}
+	
+}
