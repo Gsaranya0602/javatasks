@@ -1,0 +1,34 @@
+1. Write a program to print odd numbers between 21 to 40 using while loop and jumping statement
+
+public class workingplace {
+
+	public static void main(String[] args) {
+	 int i=21;
+		 while(i<=40) {
+	
+			 if(i%2==0) {
+				 i++;
+			    continue;
+				 }
+				System.out.println("odd numbers : " +i);
+				 i++;
+		 }
+				  }
+}
+
+2. Write a method which should join the given string and number:
+		      For eg:   input : Hi, 5    Output: Hi5
+
+  public class workingplace {
+	public static  String method(String a,int num) {
+		String c=a+num;
+		return c ;
+	}
+
+	public static void main(String[] args) {
+	String result= method("Hi",5);
+		System.out.println(result);
+		
+	}
+
+}
