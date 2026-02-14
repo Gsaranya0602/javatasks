@@ -1,0 +1,38 @@
+1. Write a program to print elements of 1D array in reverse order:
+       input: {1,2,3,4,5}    output: {5,4,3,2,1}
+	
+public class workingplace {
+	
+public static void main(String[] args) {
+	
+   int []num= {1,2,3,4,5};
+   System.out.print("{");
+  
+   for(int i=num.length-1;i>=0;i--) {
+	   
+	   System.out.print(num[i]);
+   if(i!=0) {
+	   System.out.print(",");
+   }
+	    }
+   System.out.print("}");
+}
+}
+
+2. Write a program using for-each loop to print characters from an array: 
+	
+public class workingplace {
+	
+public static void main(String[] args) {
+	
+    char [] letter= {'a','b','c','d','e'};
+      for(char Alphabet:letter) {
+	   System.out.println(Alphabet);
+	   
+   }
+   
+
+	}
+
+}
+
