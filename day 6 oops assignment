@@ -1,0 +1,66 @@
+1. Explain about class and objects
+CLASS:
+Class is a blueprint or plan for object.It defines properties (variables) and behaviors (methods).
+Example:
+If “Car” is a class ->color, model, speed are properties .
+                      drive(), brake() are behaviors
+class is declard using class keyword.
+
+OBJECT:
+Object is a real time entity that created from the class.it represents state(data) and behavior(methods).
+it is used to access class variables and methods.
+Example:
+* Car is a class--> "white adi car" is an object.
+* Animal is a class-->dog,cat is an object.
+Objects are created using new keword and a constructor
+ex: classname objname = new classname();
+
+
+
+2. Create a program as  follows:
+
+      Parent Class: Person who can walk,run,sit and has attributes height,weight
+      Child Class: Student who has own method study and also can inherit the methods and properties from Person
+     Print the results.
+
+class Person{    //parent class
+	void walk (){
+		System.out.println(" person is walking");
+	}
+	void run(){
+		System.out.println("person is running");
+		
+	}
+	void sit() {
+		System.out.println("person is sitting");
+	}
+	// properties
+	int height;
+	int weight;
+	
+		}
+
+public class Student  extends Person{  //child class
+	
+	void study() {
+		System.out.println("student is studying");
+	}
+public static void main(String[] args) {
+	Student child=new Student();
+	child.walk();
+	child.sit();
+	child.run();
+	child.study();
+	child.height=160;
+	System.out.println("height:" +child.height);
+	child.weight=60;
+	System.out.println("weight:"+ child.weight);
+	
+	}
+}
+
+
+
+
+
+
