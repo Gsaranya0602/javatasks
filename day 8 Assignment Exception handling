@@ -1,0 +1,43 @@
+1. What is the difference between Error and Exception? Explain with examples.
+Error:
+Definition :A serious problem that the application cannot handle.
+Caused By: Mostly system-level problems (like JVM failure, memory overflow).
+Recoverable: Usually not recoverable.
+Checked/Unchecked: Always unchecked
+Handling: Cannot be handled by try-catch
+For Example:OutOfMemoryError, StackOverflowError
+
+
+Exception:
+Definition: An abnormal condition that the application can handle using code.
+Caused By: Mostly programming mistakes or external conditions (like invalid input, file not found).
+Recoverable: Usually recoverable by handling.
+Checked/Unchecked: Can be checked (must handle) or unchecked (may choose to handle).
+Handling: Can be handled by try-catch blocks.
+EXAMPLE: ArithmeticException, NullPointerException
+
+2. Write a program for handling exception
+public class Exceptionhandle{
+
+	public static void main(String[] args) {
+	
+		try {
+		int[]array= {1,2,3,4};
+		System.out.println(array[4]);
+		} catch(ArrayIndexOutOfBoundsException a) {
+			System.out.println("**array exception handled**");
+		}
+		
+		
+		try {
+		String name= null;
+		System.out.println(name.length());
+		}catch(NullPointerException n) {
+			n.printStackTrace();
+		}
+		System.out.println("*nullpointer exception handled*");
+		
+		System.out.println(" --type next-- ");
+	
+	}
+}
